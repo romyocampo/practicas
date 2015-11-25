@@ -43,8 +43,8 @@ class Auto {
             return resultado
         case 120:
             
-            self.velocidad = .Apagado
-            let resultado = (self.velocidad.rawValue,"Apagado")
+            self.velocidad = .VelocidadMedia
+            let resultado = (self.velocidad.rawValue,"Velocidad Media")
             return resultado
         default:
             let resultado = (999, "DESCONOCIDA" )
@@ -65,8 +65,7 @@ var veces = 1...20
 
 for  vez in veces
     {
-        
+        print("\(vez) Velocidad \(velocidadActual.0) \(velocidadActual.1) ")
         velocidadActual = miAuto.cambioDeVelocidad(miAuto.velocidad )
         
-        print("\(vez) Velocidad \(velocidadActual.0) \(velocidadActual.1) ")
 }
